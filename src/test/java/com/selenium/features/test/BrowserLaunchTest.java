@@ -14,6 +14,7 @@ public class BrowserLaunchTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com/");
         driver.findElement(By.xpath("/html/body/div[2]/div[3]/div[3]/span/div/div/div/div[3]/div[1]/button[2]/div")).click();
+        System.out.println("Page title is : " + driver.getTitle());
 
         //driver.quit();
     }
