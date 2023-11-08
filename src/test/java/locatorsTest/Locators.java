@@ -18,7 +18,7 @@ public class Locators {
         driver.manage().window().maximize();
 
         driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");
-        driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("secret_sauce");
+        driver.findElement(By.xpath("//*[@id='password']")).sendKeys("secret_sauce");
         driver.findElement(By.cssSelector("#login-button")).click();
         driver.findElement(By.linkText("Sauce Labs Backpack")).click();
         //driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
